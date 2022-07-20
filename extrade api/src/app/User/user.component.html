@@ -1,0 +1,64 @@
+<p>user works!</p>
+<form  [formGroup]="Form"  method="post"   enctype="multipart/form-data" >
+  <div class="mb-3">
+    <label for="NameEn">Name English</label>
+    <input type="text" id="NameEn" formControlName="nameEn" class="form-control">
+    <span class="text-danger" *ngIf="!Form.controls['nameEn'].valid && 
+    Form.controls['nameEn']?.touched"> Required Your Name in English</span>
+  </div>
+    <div class="mb-3">  
+    <label for="NameAr">Name Arabic </label>
+    <input type="text" id="NameAr" formControlName="nameAr" class="form-control">
+   
+    <span class="text-danger" *ngIf="!Form.controls['nameAr'].valid && 
+    Form.controls['nameAr']?.touched"> Required Your Name in Arabic</span>
+  </div>
+    <div class="mb-3">
+    <label for="Email">Email </label>
+    <input type="text" id="Email" formControlName="email" class="form-control">
+    <span class="text-danger" *ngIf="!Form.controls['email'].valid && 
+    Form.controls['email']?.touched"> Required Your Email</span>
+    <br>
+    <span class="text-danger" *ngIf="Form.controls['email'].hasError('pattern')">Enter @</span>
+  </div>
+    <div class="mb-3">
+    <label for="Password">Password </label>
+    <input type="password" id="Password" formControlName="password" class="form-control">
+    <span class="text-danger" *ngIf="!Form.controls['password'].valid && 
+    Form.controls['password']?.touched"> Required Your password</span>
+  </div>
+    <div class="mb-3">
+    <label for="Country">Country </label>
+    <input type="text" id="Country" formControlName="country" class="form-control">
+    <span class="text-danger" *ngIf="!Form.controls['country'].valid && 
+    Form.controls['country']?.touched"> Required Your country</span>
+  </div>
+    <div class="mb-3">
+    <label for="City">City  </label>
+    <input type="text" id="City" formControlName="city" class="form-control">
+    <span class="text-danger" *ngIf="!Form.controls['city'].valid && 
+    Form.controls['city']?.touched"> Required Your city</span>
+  </div>
+    <div class="mb-3">
+    <label for="Street">Street</label>
+    <input type="text" id="Street" formControlName="street" class="form-control">
+    <span class="text-danger" *ngIf="!Form.controls['street'].valid && 
+    Form.controls['street']?.touched"> Required Your street</span>
+  </div>
+    <div class="mb-3">
+    <label for="Phones">Phones</label>
+    <input type="text" id="Phones" formControlName="phones"class="form-control">
+    <span class="text-danger" *ngIf="!Form.controls['phones'].valid && 
+    Form.controls['phones']?.touched"> Required Your city</span>
+    </div>
+    
+    <div class="mb-3">
+    <label for="uploadedimg">Image :</label>
+    <input type="file" id="uploadedimg" formControlName="uploadedimg" class="form-control">
+  
+  </div>
+    
+   
+    <input type="submit" value="Sign Up" class="btn btn-primary" (click)="add()" [disabled]="!Form.valid" routerLink="/Login">
+    
+  </form>

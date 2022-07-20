@@ -1,0 +1,23 @@
+<form [formGroup]="form" (submit)="add()" method="post">
+  <div class="mb-3">
+    <label for="UserName" class="form-label">Email</label>
+    <input type="text" class="form-control" formControlName="Email">
+    <span class="text-danger" *ngIf="!form.controls['Email'].valid && 
+    form.controls['Email']?.touched"> Required Your Email</span>
+    <span class="text-danger" *ngIf="form.controls['Email'].hasError('pattern')">Enter @</span>
+
+    
+
+  </div>
+  <div class="mb-3">
+    <label for="" class="form-label">Password</label>
+    <input type="password" class="form-control" formControlName="Password">
+    <span class="text-danger" *ngIf="!form.controls['Password'].valid && 
+    form.controls['Password']?.touched"> Required Your Password</span>
+  </div>
+  <div class="mb-3 form-check">
+    <input type="checkbox" class="form-check-input" id="exampleCheck1" formControlName="RememberMe">
+    <label class="form-check-label" for="exampleCheck1">Check me out</label>
+  </div>
+  <button type="submit" class="btn btn-primary">LogIn</button>
+</form>
