@@ -1,0 +1,13 @@
+<div class="row d-flex justify-content-center text-center bg-muted">
+  <form  [formGroup]="CollectionForm" (submit)="add()" method="post"  >
+    <label for="NameEn">Name English</label>
+    <input type="text" id="NameEn" formControlName="nameEn" class="">
+    <label for="NameAr">Name Arabic :</label>
+    <input type="text" id="NameAr" formControlName="nameAr" >
+    
+    <input type="submit" value="Submit" >
+    
+  </form>
+
+
+</div>

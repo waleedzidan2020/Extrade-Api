@@ -11,6 +11,8 @@ import { UserServices } from './Services/UserServices';
 import { UserComponent } from './User/user.component';
 import { LogInComponent } from './Account/log-in/log-in.component';
 import { AccountService } from './Services/Account.service';
+import { CollectionServices } from './Services/CollectionServices';
+import { CollectionComponent } from './Component/collection/collection.component';
 
 
 @NgModule({
@@ -20,7 +22,7 @@ import { AccountService } from './Services/Account.service';
     UserComponent,
     ResultComponent,
     LogInComponent,
-
+    CollectionComponent,
   ],
   imports: [
     BrowserModule,
@@ -29,7 +31,7 @@ import { AccountService } from './Services/Account.service';
     AppRoutingModule,
     ReactiveFormsModule
   ],
-  providers: [UserServices,AccountService],
+  providers: [UserServices,AccountService,CollectionServices],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
