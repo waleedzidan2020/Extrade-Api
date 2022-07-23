@@ -33,12 +33,12 @@ export class CollectionComponent implements OnInit {
         
         console.log(res)
         
-        this.url= res.url
-        if(res.massege=="Done Added"){
+        // this.url= res.url
+        // if(res.m=="Done Added"){
 
 
-          alert("data Added");
-        }
+          // alert("data Added");
+        // }
       }
     );
   }
