@@ -1,11 +1,23 @@
-<div class="row d-flex justify-content-center text-center bg-muted">
-  <form  [formGroup]="CollectionForm" (submit)="add()" method="post"  >
-    <label for="NameEn">Name English</label>
-    <input type="text" id="NameEn" formControlName="nameEn" class="">
-    <label for="NameAr">Name Arabic :</label>
-    <input type="text" id="NameAr" formControlName="nameAr" >
+<div  style="width: 100vw; color: white; background-color: #52050A;">
+  <form  [formGroup]="CollectionForm" (submit)="add()" method="post"  class="text-center"
+   style="border: solid  #182525; width: 50%;margin: auto;height: 100vh; 
+   border-radius: 0% 50% 0% 50%;background-color: #182525;">
     
-    <input type="submit" value="Submit" >
+    <div style="padding-top: 10%;"><h1>Add Collection Name</h1></div>
+    <div style="margin-top: 5%;">
+
+    <span style="padding:2px 20px 3px 20px;">
+    <label for="NameEn">Name English : </label></span>
+    <input type="text" id="NameEn" formControlName="nameEn" placeholder="English Name" style="border: 2px solid #182525;">
+    </div>
+    <div style="margin-top: 5%;">
+      <span style="padding:2px 20px 3px 26px;">
+        <label for="NameAr">Name Arabic :</label>
+      </span>
+      <input type="text" id="NameAr" formControlName="nameAr" placeholder="Arabic Name" style="border: 2px solid #182525;">
+    </div>
+    <input type="submit" value="Submit" class="" style="background-color: green; border: none;
+    border-radius: 15px; cursor: pointer;margin-top: 10%; color: white; padding: 0.7rem 0.7rem;" >
     
   </form>
 

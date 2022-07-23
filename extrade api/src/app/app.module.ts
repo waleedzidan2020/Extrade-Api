@@ -13,6 +13,7 @@ import { LogInComponent } from './Account/log-in/log-in.component';
 import { AccountService } from './Services/Account.service';
 import { CollectionServices } from './Services/CollectionServices';
 import { CollectionComponent } from './Component/collection/collection.component';
+import { GetCollectionsComponent } from './Component/GetCollections/get-collections/get-collections.component';
 
 
 @NgModule({
@@ -23,6 +24,7 @@ import { CollectionComponent } from './Component/collection/collection.component
     ResultComponent,
     LogInComponent,
     CollectionComponent,
+    GetCollectionsComponent,
   ],
   imports: [
     BrowserModule,
