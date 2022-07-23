@@ -24,14 +24,8 @@ export class CollectionComponent implements OnInit {
   }
   add(){
     let Collection:CollectionEditViewModel=new CollectionEditViewModel();
-<<<<<<< HEAD:extrade-api/src/app/Component/collection/collection.component.ts
     Collection.NameEN=this.CollectionForm.value["NameEN"];
     Collection.NameAr=this.CollectionForm.value["NameAr"];
-=======
-    Collection.nameEn=this.CollectionForm.value["nameEn"];
-    Collection.nameAr=this.CollectionForm.value["nameAr"];
-    //Collection.marketerID=this.CollectionForm.value["nameAr"];
->>>>>>> e8b05d0d51893d58624d96f21e185b251955aed1:extrade api/src/app/Component/collection/collection.component.ts
     
     this.CollectionServices.addCollection(Collection).subscribe(
 
