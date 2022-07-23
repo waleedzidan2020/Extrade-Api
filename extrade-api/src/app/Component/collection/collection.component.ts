@@ -39,9 +39,7 @@ export class CollectionComponent implements OnInit {
 
           alert("data Added");
         }
-      
       }
-      
     );
   }
 }
