@@ -8,15 +8,21 @@ import { CollectionServices } from 'src/app/Services/CollectionServices';
 })
 export class GetCollectionsComponent implements OnInit {
   
-
+  public Collection:CollectionViewModel =new CollectionViewModel()
   constructor(private CollectionServices :CollectionServices) { }
 
   ngOnInit(): void {
     
   }
   get(){
-    let Collection:CollectionViewModel=new CollectionViewModel();
-    let result = this.CollectionServices.getCollection().subscribe(result=>console.log(result.Data));
+    
+      this.CollectionServices.getCollection().subscribe(result=>
+      {
+
+       this. Collection=result.Data
+      });
+    
+    return this.Collection;
   }
   getProductInCollection(Code:string){
     //let colProduct:CollectionProductEditViewModel=new CollectionProductEditViewModel();

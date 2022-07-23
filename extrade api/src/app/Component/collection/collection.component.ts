@@ -25,6 +25,7 @@ export class CollectionComponent implements OnInit {
     let Collection:CollectionEditViewModel=new CollectionEditViewModel();
     Collection.nameEn=this.CollectionForm.value["nameEn"];
     Collection.nameAr=this.CollectionForm.value["nameAr"];
+    //Collection.marketerID=this.CollectionForm.value["nameAr"];
     
     this.CollectionServices.addCollection(Collection).subscribe();
   }

@@ -1,7 +1,6 @@
 <div class="container text-center CollectionContainer" >
-    <div>
-        <h1>adsfvzxcjvwe</h1>
-        <h1>Code</h1>
-        <a href="" (click)="getProductInCollection('code')"></a>
+    <div *ngFor="let i of Collection.Data">
+        
+        <a href="" (click)="getProductInCollection(Collection.Data.code)">{{i}}</a>
     </div>
 </div>
