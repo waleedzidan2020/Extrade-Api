@@ -13,11 +13,7 @@ import { LogInComponent } from './Account/log-in/log-in.component';
 import { AccountService } from './Services/Account.service';
 import { CollectionServices } from './Services/CollectionServices';
 import { CollectionComponent } from './Component/collection/collection.component';
-<<<<<<< HEAD:extrade-api/src/app/app.module.ts
 import { AuthService } from './Services/Auth.service';
-=======
-import { GetCollectionsComponent } from './Component/GetCollections/get-collections/get-collections.component';
->>>>>>> e8b05d0d51893d58624d96f21e185b251955aed1:extrade api/src/app/app.module.ts
 
 
 @NgModule({
@@ -28,7 +24,7 @@ import { GetCollectionsComponent } from './Component/GetCollections/get-collecti
     ResultComponent,
     LogInComponent,
     CollectionComponent,
-    GetCollectionsComponent,
+
   ],
   imports: [
     BrowserModule,
